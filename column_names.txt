@@ -1,0 +1,111 @@
+Title: 
+------
+Jeopardy Contestant Data
+
+Source: 
+-------
+This dataset was collected by a webcrawler from http://www.j-archive.com/
+
+Attribute Information: 
+----------------------
+There are 17448 instances, with 18 attributes for each instance. 
+iirc this is what the columns mean. 
+
+Origin:     
+The location from which the contestant hails at the time the game was filmed.
+
+Occupation: 
+The occupation of the contestant at the time the game was filmed.
+
+Name:
+Name of the contestant.
+
+Game:       
+Game number and date the game aired.
+
+Is tournament?: 
+1 if the game was played as part of a tournament, 0 if it was a normal jeopardy
+tournament.
+
+J! Score:       
+The total score accumulated in the first round, aka the Jeopardy Round. 
+
+DJ! Score:      
+The total score accumulated in the second round, aka the Double Jeopardy round. 
+This score will be a lot higher since the number of points awarded is doubled 
+in the second round. 
+
+FJ! Score:
+The score that was accumlated in the Final Jeopardy round.
+
+Coryat score:
+The score of the player if wagering in Final Jeopardy and Daily Doubles is not
+accounted for in their score. This is often a better measure of the players
+overall skill. 
+
+Right Answers:
+Number of correct responses a player gave.
+
+Wrong Answers:
+Number of incorrect responses a player gave.
+
+Rebs:
+Rebounds, the number of questions that the player answered correctly after 
+another player gave an incorrect answer. 
+
+DDs:
+Daily doubles, the number of daily doubles that this player got. 
+
+DD gain/loss:
+The amount that a player either gained or lost from daily doubles (positive
+number for gain, negative number for loss).
+
+FJ!:
+R for right answer, W for wrong answer.
+
+FJ! gain/loss:
+The amount that the player gained or lost in the final jeopardy round. 
+
+Team Batting Average:
+The overall ratio of correct to incorrect responses for all players in the game
+that was played.
+
+Batting Average:
+The ratio of correct to incorrect responses that the player gave. 
+
+General Jeopardy Information:
+-----------------------------
+If you aren't familiar with jeopardy, the best way to get familiar is just to 
+watch it. It comes on at 7:30 Monday through Friday on WBIR in Knoxville. It's 
+good fun!
+
+Wikipedia has a more detailed description of the game here, 
+https://en.wikipedia.org/wiki/Jeopardy!#Gameplay
+and I'll summarize how it works here: 
+
+There are 3 contestents in each game, and 3 rounds of the game are played: 
+Jeopardy, Double Jeopardy, and Final Jeopardy. 
+
+In the Jeopardy and Double Jeopardy round, there are a 6 categories, and 
+5 clues associated with each category. Each clue has a different point value, 
+with higher value clues associated with harder questions. 
+
+At the beginning of the round, a player selects a clue and the host reads the 
+clue. After the host has read the clue, the players have the chance to 
+'buzz in' and answer. If the player answers correctly, the player gets the 
+point value of the clue added to their score, and gets to select the next 
+category and clue. However, if they answer incorrectly, the player gets the 
+point value of that clue deducted from their score, and the other players have 
+the opportunity to 'rebound' and answer the question that the other 
+contestant(s) failed to answer. 
+
+There are special clues called 'Daily Doubles' that are placed randomly in 
+clues, and the players do not know where they are. If the player selects a clue
+that is a Daily Double, then they are obligated to answer. Additionally, the 
+point value of the clue is up to the player: they can 'wager' up to the amount 
+of points they they have already accumulated, or up to 1000 points if they have
+less than 1000 or a negative score. 
+
+The Final Jeopardy round only contains one clue and one category, and the value
+of the clue is howevever much the player chooses to wager from their 
+accumulated points.
